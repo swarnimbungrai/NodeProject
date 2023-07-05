@@ -4,12 +4,15 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start" : "nodemon app.js"
+    "start": "nodemon app.js"
   },
   "author": "swarnim",
   "license": "ISC",
   "dependencies": {
+    "ejs": "^3.1.9",
     "express": "^4.18.2",
-    "nodemon": "^2.0.22"
+    "mysql2": "^3.4.5",
+    "nodemon": "^2.0.22",
+    "sequelize": "^6.32.1"
   }
 }
