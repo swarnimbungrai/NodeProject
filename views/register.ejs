@@ -5,18 +5,63 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=>, initial-scale=1.0">
     <title>Document</title>
+    <style>
+      .container{
+    height: 100vh;
+    width: 100%;
+    background-color: #1d2f3c;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+        .lolo{
+        width: 250px;
+        margin-left: 120px;
+        margin-top: 60px;
+        position: relative; 
+        padding-left: 15px;
+        background-color: rgb(255, 255, 255);
+        height: 350px;
+      }
+      .registerName, .registerEmail, .regPassword{
+        border:0; padding:7px 0; border-bottom:1px solid; size: 100;
+      } 
+
+      .button1{
+        background-color: black;
+        color:aliceblue;
+        text-align: center;
+        height: 30px;
+        margin-left: 0px;
+        border-radius: 5px;
+        padding: 10px 30px;
+        width: 94%;
+     }
+   
+
+    </style>
 </head>
 <body>
+  <form action = "/register" method="post">
+    <div class="container">
+    <div class = "lolo">
     <h2>Register</h2>
-    <input type="text" class="effect-5" name="productID" placeholder="Name" size="30">
+    <input type="text" class="registerName" name="regName" placeholder="Name" size="30">
     <br><br>
-    <input type="text" class="effect-1" name="productName" placeholder="Email" size="30">
+    <input type="text" class="registerEmail" name="regEmail" placeholder="Email" size="30">
     <br><br>
-    <input type="text" class="effect-2" name="productPrice" placeholder="Password" size="30">
+    <input type="text" class="regPassword" name="regPsw" placeholder="Password" size="30">
     <br><br>
-    <input type="text" class="effect-3" name="productAvailable" placeholder="Confirm password" size="30">
+   
+    
+    <button class="button1">Sign Up</button>
+    </form>
     <br><br>
-    <button class="button">Sign Up</button>
-    <a href="login" class="userLogin"> Log in </a>    
+    <div class="form-link">
+      <span>Already have an account ? <a href="login" class="button2">Login</a></span>
+    </div>
+    </div>
+    </div>
+
 </body>
 </html>

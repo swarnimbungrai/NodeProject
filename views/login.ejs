@@ -5,19 +5,55 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=>, initial-scale=1.0">
     <title>Document</title>
+
+    <style>
+        .container{
+      height: 100vh;
+      width: 100%;
+      background-color: #1d2f3c;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+          .lolo{
+          width: 250px;
+          margin-left: 120px;
+          margin-top: 60px;
+          position: relative; 
+          padding-left: 15px;
+          background-color: rgb(255, 255, 255);
+          height: 300px;
+        }
+         .email, .password{
+          border:0; padding:7px 0; border-bottom:1px solid; size: 100;
+        } 
+  
+        .button2{
+          background-color: black;
+          color:aliceblue;
+          text-align: center;
+          height: 30px;
+          margin-left: 0px;
+          border-radius: 5px;
+          padding: 10px 30px;
+          width: 94%;
+       }
+       </style>
 </head>
 <body>
-    <h2>Log in</h2>
-  
-    <input type="text" class="effect-1" name="productName" placeholder="Email" size="30">
-    <br><br>
-    <input type="text" class="effect-2" name="productPrice" placeholder="Password" size="30">
-    <br><br>
+    <div class="container">
+        <div class = "lolo">
+        <h2>Log In</h2>
+        <input type="text" class="email" name="Name" placeholder="Email" size="30">
+        <br><br>
+        <input type="text" class="password" name="Password" placeholder="Password" size="30">
+        <br><br>
+       
    
-   
-    <button class="button">Sign In</button>
-    <a href="register" class="userReg"> Register </a>    
-    
-        
+        <button class="button2">Sign In</button>
+        <br><br>
+        <div class="form-link">
+        <span>Don't have an account ? <a href="register" class="button1">Sign Up</a></span>
+    </div> 
 </body>
 </html>
