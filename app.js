@@ -7,7 +7,9 @@ app.set("view engine", "ejs") //telling node to use ejs
 const {sequelize, users} = require ('./model')
 
 const bcrypt = require("bcrypt");//day4
-const { registerUser } = require('./controller/authController');
+const { registerUser, loginUser } = require('./controller/authController');
+
+
 
 //shows data in terminal which were filled in form
 app.use(express.json())
@@ -24,8 +26,8 @@ app.post('/register', registerUser); //day4
 app.get('/login',(req, res) => {
     // res.send("<h1>hello i am about page! </h1>")
     res.render('login.ejs');
- 
  });
+ app.post('/login', loginUser);
 
 
 app.listen(4000,()=>{
